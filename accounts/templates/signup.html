@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+{% block stylesheet %}
+  <link rel="stylesheet" href="{% static 'css/account.css' %}">
+{% endblock %}
+{% block content %}
+
+<div class="container col-6 mt-4" style="border: 1px solid gray;box-shadow: 2px 2px gray;height: 550px;">
+
+  <h1 class="text-center ">Register</h1>
+<form method="post" novalidate>
+{% csrf_token %} 
+{{form}}
+<button class="btn btn-primary btn-block float-right mt-2" type="submit">Signup</button>
+</form>
+
+</div>
+  {% endblock %}
