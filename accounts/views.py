@@ -48,5 +48,5 @@ def loginBackend(request):
          return redirect('signup')
 
 def logout(request):
-    logout_user(request)
-    return redirect('home')
+   logout_user(request)
+   return redirect('login')
